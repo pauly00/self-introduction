@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    background-color: white;
+}
+
+
+/* 제목란 */
+header {
+    background-color: white;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* 로고란, 현재 공란 */
+.brand-logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    color:gray;
+    display: flex;
+    align-items: center;
+}
+
+/* 로고 및 메뉴 링크 꾸미기 */
+.brand-logo a,
+.nav-menu ul li a {
+    color: darkblue;
+    text-decoration: none; /* 링크 밑줄 제거 */
+    font-weight: 600;
+    transition: color 0.3 ease;
+}
+
+/* 마우스 이펙트(hover) */
+.brand-logo a:hover,
+.nav-menu ul li a:hover {
+    color: gray;
+}
+
+/* 상단메뉴란 */
+.nav-menu ul {
+    display: flex;
+    list-style-type: disc;
+    gap: 20px;
+}
+
+/* 서브텍스트 및 버튼 */
+#serve-text {
+    padding: 5%;
+    text-align: left;
+    box-sizing: border-box;
+    border: 1px solid black; /* 모양확인용 */
+}
+
+
+
+/* 세션별로 분류 */
+.section {
+    padding: 80px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 텍스트 내용 박스 */
+.txtbox {
+    padding: 25px;
+    flex: 1; /* 높이 균등 분배 */
+    display: flex;
+    flex-direction: column;
+}
+
+/* 날짜 및 기간 스타일 */
+.date {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 8px;
+    display: block;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+/* 스택부분 */
+.bg-light {
+    background-color: gray;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* 글자 */
+h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    color: 4D4D4D; /* 어두운 회색*/
+    margin-bottom: auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    color: 4D4D4D; /* 어두운 회색*/
+    margin-bottom: auto;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    color: 4D4D4D; /* 어두운 회색*/
+    margin-bottom:auto;
+}
