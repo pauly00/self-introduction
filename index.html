@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
+    <title>Ryu Kyungrock | portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="header-container">
+        <!-- 이름 로고 -->
+        <div class="logo">
+            <a href="#">Ryu Kyungrock</a>
+        </div>
 
         <!-- 상단 메뉴 -->
         <nav class="nav-menu">
@@ -17,163 +21,135 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#activities">Activities</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#temp">임시란</a></li>
+                <li><a href="#temp">임시</a></li>
             </ul>
         </nav>
-
-        <!-- 상단 컨텍 부분(하단으로 변경 가능) -->
-        <div class="right-panel">
-            <div class="btn-register">
-                How to contect
-            </div>
-            <div class="social-icons">
-                <a href="https://github.com"><span>Github</span></a>
-                <a href=""><span>LinkedIn</span></a>
-            </div>
-        </div>
-
-        <br><br><br>
         
+        <div class="header-right">
+            <a href="#contact" class="btn-primary small">Contact</a>
+        </div>
     </header>
-    
-    <hr/><br>
 
-    <div>
-        <!-- 포폴 처음부분 -->
-        <section id="home" class="first-section">
-        <div class="main-title">
-            <h1>
-                안녕하세요, 류경록입니다
-            </h1>
-            <p id="serve-text">
-                이곳은 서브 텍스트가 들어가는 자리입니다.<br>
-                본인을 표현하는 한 줄 소개나 핵심 가치를 작성하세요.
-            </p>
-            <a href="#contact" class="btn-primary">버튼 텍스트 &rarr;</a>
-        </div>
-        
-        <div class="image-area">
-            <div class="img-placeholder">Image Area</div>
-        </div>
-    </section>
+    <main>
+        <!-- 자기소개 -->
+        <section id="home" class="section hero-section">
+            <div class="hero-text">
+                <h1>
+                    신뢰를 주기 위해<br>
+                    꾸준히 기록하는 개발자,<br>
+                    <span class="highlight">류경록</span>입니다.
+                </h1>
+                <p class="subtitle">
+                    단순한 기능 구현을 넘어,<br>
+                    안정적인 서비스와 사용자 경험을 고민합니다.
+                </p>
+                <a href="#about" class="btn-primary">더 알아보기</a>
+            </div>
 
-    <!-- 자기소개란(about) -->
-    <section id="about" class="section text-center">
-        <h2>About Title</h2>
-        <p class="subtitle">소제목 또는 부연 설명이 들어가는 자리입니다.</p>
-        
-        <div class="about-content">
-            <p>
-                자기소개 본문 내용 1입니다. 이곳에 자신의 배경이나 강점을 서술합니다.<br>
-                자기소개 본문 내용 2입니다. 줄바꿈을 통해 내용을 구분합니다.
-            </p>
-            
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <h3>Info 1</h3>
-                    <p>내용 1<br>세부 내용</p>
-                </div>
-                <div class="stat-item">
-                    <h3>Info 2</h3>
-                    <p>내용 2<br>세부 내용</p>
-                </div>
-                <div class="stat-item">
-                    <h3>Info 3</h3>
-                    <p>내용 3<br>세부 내용</p>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=1000&auto=format&fit=crop" alt="Hero Image">
+            </div>
+        </section>
+
+        <!-- 소개 -->
+        <section id="about" class="section about-section">
+            <div class="title-area">
+                <h2>About Me</h2>
+                <p>지속적인 성장을 추구하는 개발자입니다.</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        웹 풀스택 및 클라우드 서비스 개발을 목표로 하고 있습니다.<br>
+                    </p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 활동 나열란(activities) -->
-    <section id="activities" class="section bg-light">
-        <div class="section-header text-center">
-            <h2>Activities</h2>
-        </div>
+        <!-- 활동 -->
+        <section id="activities" class="section bg-light">
+            <div class="title-area">
+                <h2>Activities</h2>
+            </div>
 
-        <div class="grid">
+            <div class="grid">
+                <div class="card">
+                    <div class="text-box">
+                        <span class="date">2025.07 ~ 2025.08</span>
+                        <h3>솔트웨어(주) 미래내일일경험 수료</h3>
+                        <p class="desc">
+                            사회보장분야 공공데이터 분석 및 활용 과정.<br>
+                            실데이터를 기반으로 분석 및 시각화 업무를 수행했습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
             <div class="card">
-                <div class="body">
-                    <div class="txtbox">
-                    <span class="date">2025.07 ~ 2025.08</span>
-                    <h3>솔트웨어(주) 미래내일일경험 수료</h3>
+                    <div class="text-box">
+                        <span class="date">2025.09 ~ 2025.11</span>
+                        <h3>SW중심대학 우수작품 경진대회</h3>
+                        <p class="desc">
+                            팀 프로젝트로 참여하여 우수 작품을 출품했습니다.
+                        </p>
                 </div>
             </div>
-        </div>
 
-        <div class="card">
-            <div class="body">
-                <div class="txtbox">
-                <span class="date">2025.09 ~ 2025.11</span>
-                <h3>2025 SW중심대학 우수작품 경진대회 참여</h3>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="body">
-                <div class="txtbox">
-                <span class="date">2025.12 ~ 2026.06</span>
-                <h3>우리FISA 클라우드 서비스 개발 과정 수강 (진행 중)</h3>
-                </div>
-            </div>
-        </div>
-
-
-    </section>
-
-    <!-- 프로젝트 나열란(projects) -->
-    <section id="projects" class="section">
-        <div class="section-header text-center">
-            <h2>Projects</h2>
-            <p class="subtitle">프로젝트 섹션에 대한 부연 설명입니다.</p>
-        </div>
-
-        <!-- 프로젝트 카드1 -->
-        <div class="grid">
             <div class="card">
-                <div class="image">Image 1</div>
-                <div class="body">
-                    <h3>Project Name 1</h3>
+                <div class="text-box">
+                    <span class="date">2025.12 ~ 2026.06 (진행 중)</span>
+                    <h3>우리FISA 클라우드 과정</h3>
                     <p class="desc">
-                        프로젝트 1에 대한 설명 텍스트입니다. 어떤 기능을 구현했는지, 어떤 문제를 해결했는지 작성합니다.
+                        클라우드 서비스 개발 전문가 과정 수강 중
                     </p>
-                    <div class="tags">
-                        <span>Tag 1</span>
-                        <span>Tag 2</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 프로젝트 관련 -->
+        <section id="projects" class="section">
+            <div class="title-area">
+                <h2>Projects</h2>
+                <p>기술적 난제를 해결하고 가치를 만들어낸 경험입니다.</p>
+            </div>
+
+            <div class="grid">
+                <div class="card project-card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop" class="card-img" alt="Project 1">
+                    <div class="txtbox">
+                        <span class="date">2024.09 ~ 2024.12 / 2025.06 ~ 2025.07</span>
+                        <h3>동형암호 활용 에너지 분석</h3>
+                        <p class="desc">
+                            개인정보 보호를 위해 동형암호 기술을 도입하여,<br>
+                            암호화된 상태로 에너지 데이터를 분석하는 시스템입니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card project-card">
+                    <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=800&auto=format&fit=crop" class="card-img" alt="Project 2">
+                    <div class="txtbox">
+                        <span class="date">2025.07 ~ 2025.08</span>
+                        <h3>AI 기반 복지 리포트 자동화</h3>
+                        <p class="desc">
+                            복잡한 복지 데이터를 AI가 분석하여<br>
+                            사용자 맞춤형 리포트를 자동으로 생성 및 제공합니다.
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <!-- 프로젝트 카드2 -->
-            <div class="project-card">
-                <div class="card-image">Image 2</div>
-                <div class="card-body">
-                    <h3>Project Name 2</h3>
-                    <p class="project-desc">
-                        프로젝트 2에 대한 설명 텍스트입니다. 내용이 길어지면 박스 높이가 유동적으로 변합니다.
-                    </p>
-                    <div class="tags">
-                        <span>Tag A</span>
-                        <span>Tag B</span>
-                    </div>
-                </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Ryu Kyungrock. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/pauly00">github</a>
+                <a href="">LinkedIn</a>
             </div>
+        </footer>
 
-        </div>
-    </section>
-
-    <!-- 임시로 배열, 필요없을 시 삭제 -->
-    <section id="temp">임시세션</section>
-
-    </div>
-    <div class="container">
-        
-    </div>
-
-    <footer>
-
-    </footer>
+    </main>
 </body>
 </html>
